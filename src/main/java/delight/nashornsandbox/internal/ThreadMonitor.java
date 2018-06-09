@@ -1,6 +1,6 @@
 package delight.nashornsandbox.internal;
 
-import static delight.nashornsandbox.internal.NashornSandboxImpl.LOG;
+//import static delight.nashornsandbox.internal.NashornSandboxImpl.LOG;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
@@ -108,7 +108,7 @@ public class ThreadMonitor {
 						return;
 					}
 					if (!scriptFinished.get()) {
-						LOG.error(this.getClass().getSimpleName() + ": Thread hard shutdown!");
+						//LOG.error(this.getClass().getSimpleName() + ": Thread hard shutdown!");
 						threadToMonitor.stop();
 						scriptKilled.set(true);
 					}

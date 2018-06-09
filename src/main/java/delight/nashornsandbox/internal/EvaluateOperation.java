@@ -5,7 +5,7 @@ import javax.script.ScriptContext;
 import javax.script.ScriptEngine;
 import javax.script.ScriptException;
 
-import static delight.nashornsandbox.internal.NashornSandboxImpl.LOG;
+//import static delight.nashornsandbox.internal.NashornSandboxImpl.LOG;
 
 public class EvaluateOperation implements ScriptEngineOperation {
 
@@ -33,11 +33,11 @@ public class EvaluateOperation implements ScriptEngineOperation {
 
     @Override
     public Object executeScriptEngineOperation(ScriptEngine scriptEngine) throws ScriptException {
-        if (LOG.isDebugEnabled()) {
+        /*if (LOG.isDebugEnabled()) {
             LOG.debug("--- Running JS ---");
             LOG.debug(js);
             LOG.debug("--- JS END ---");
-        }
+        }*/
        
         if (bindings != null) {
             return scriptEngine.eval(js, bindings);

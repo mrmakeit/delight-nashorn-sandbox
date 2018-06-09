@@ -44,7 +44,7 @@ class JsSanitizer {
 	}
 
 	/** The resource name of beautify.min.js script. */
-	private final static String BEAUTIFY_JS = "/META-INF/resources/webjars/js-beautify/1.6.12/js/lib/beautify.js";
+	private final static String BEAUTIFY_JS = "/src/main/resources/beautify.js";
 
 	/** The beautify function search list. */
 	private static final List<String> BEAUTIFY_FUNCTIONS = Arrays.asList("window.js_beautify;", "exports.js_beautify;",
